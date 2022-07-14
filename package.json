@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "task-2-1": "nodemon src/task-2-1.js",
     "task-2-2": "nodemon src/task-2-2.js"

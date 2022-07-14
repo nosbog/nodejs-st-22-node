@@ -1,4 +1,4 @@
-const { Transform, pipeline } = require('stream');
+import { Transform, pipeline } from 'node:stream';
 
 class ReverseStream extends Transform {
   _transform(data, _, callback) {

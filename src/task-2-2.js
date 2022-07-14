@@ -1,8 +1,12 @@
-const fs = require('node:fs');
-const path = require('node:path');
-const { pipeline } = require('node:stream');
+import fs from 'node:fs';
+import path from 'node:path';
+import { pipeline } from 'node:stream';
+import { fileURLToPath } from 'node:url';
 
-const csv = require('csvtojson');
+import csv from 'csvtojson';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const csvFilePath = path.join(__dirname, 'csv', 'csv.csv');
 const txtFilePath = path.join(__dirname, 'txt', 'txt.txt');
