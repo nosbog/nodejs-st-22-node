@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "babel-node src/task-2-2.js",
     "task-2-1": "nodemon --exec babel-node src/task-2-1.js",
     "task-2-2": "nodemon --exec babel-node src/task-2-2.js"
   },
