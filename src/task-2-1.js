@@ -12,14 +12,9 @@ class ReverseStream extends Transform {
   }
 }
 
-pipeline(
-  process.stdin,
-  new ReverseStream({ highWaterMark: 0 }),
-  process.stdout,
-  (error) => {
-    if (error) console.error(`Error: ${error.message}`);
-  }
-);
+pipeline(process.stdin, new ReverseStream(), process.stdout, (error) => {
+  if (error) console.error(`Error: ${error.message}`);
+});
 
 // 2nd option:
 // process.stdin.on('data', (data) => {
