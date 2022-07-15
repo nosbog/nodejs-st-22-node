@@ -5,8 +5,9 @@ import { fileURLToPath } from 'node:url';
 
 import csv from 'csvtojson';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// uncomment these variables if you run the code without Babel
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 const csvFilePath = path.join(__dirname, 'csv', 'csv.csv');
 const txtFilePath = path.join(__dirname, 'txt', 'txt.txt');
